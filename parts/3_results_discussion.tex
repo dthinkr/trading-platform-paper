@@ -80,8 +80,13 @@ For instance, some of the most common metrics that researchers are interested in
 	\begin{equation*}
 	OFI_{t,t-j} = \frac{OFB_{t,t-j} - OFA_{t,t-j}}{OFB_{t,t-j}+OFB_{t,t-j}}
 	\end{equation*}
-	where $OFB_{t,t-j}$ and $OFA_{t,t-j}$  denotes the order flow of bid and ask orders (passive and aggresive), 	respectively, between the time periods $t-j$ and $t$.
+	where $OFB_{t,t-j}$ and $OFA_{t,t-j}$  denotes the order flow of bid and ask orders (passive and aggressive), respectively, between the time periods $t-j$ and $t$.
 	\item Trade Flow Imbalance (TFI):
+        \begin{equation*}
+	TFI_{t,t-j} = \frac{TFB_{t,t-j} - TFA_{t,t-j}}{TFB_{t,t-j}+TFB_{t,t-j}}
+	\end{equation*}
+        where $TFB_{t,t-j}$ and $TFA_{t,t-j}$  denotes the trade flow of bid and ask aggressive orders (trades), respectively, between the time periods $t-j$ and $t$.
+
 \end{itemize}
 
 \begin{figure}[!htbp]
@@ -95,7 +100,7 @@ For instance, some of the most common metrics that researchers are interested in
     \label{fig:order_book_metrics}
 \end{figure}
 
-Figure \ref{fig:order_book_metrics} depicts the above metrics. Panel (a) illustrates the Order Book Imbalance (OBI) through the whole trading session. Panel (b) depicts the Order Flow Imbalance (OFI), and Panel (c) shows the corresponding Trade Flow Imbalance (TFI). Specifically, for OBI we used the top 5 levels, and for OFI and OBI, we aggregated the data per 5 seconds.
+Figure \ref{fig:order_book_metrics} depicts the above metrics. Panel (a) illustrates the Order Book Imbalance (OBI) throughout the whole trading session. Panel (b) depicts the Order Flow Imbalance (OFI), and Panel (c) shows the corresponding Trade Flow Imbalance (TFI). Specifically, for OBI we used the top 5 levels, and for OFI and TFI, we aggregated the data per 5 seconds.
 
 
 \section{Discussion and Future Directions}
@@ -105,7 +110,7 @@ In this section, we highlight future developments for the MINT platform, focusin
 \subsection{Front-End}
 For the front-end, we suggest including a new panel interface where participants see different messages or news in real time. This could help us study how people react to new information (positive, negative or neutral) and explore whether certain types of messages influence trading behaviour. For instance, it would be interesting to see how human trading activity evolves when neutral messages are displayed, against messages with a more positive sentiment, where a price increase is expected. While similar studies have been done using real market data (e.g. \cite{kurov2019price} among others), an experimental setup like this gives allows us to test specific causal mechanisms in a controlled and systematic environment.
 
-Moreover, the introduction of a GPT interface would allow human participants to seek advice from different AI tools. This is quite important in practise, as would allow researchers to study the impact of AI-assisted decision-making on trading behaviour and performance, a treatment that has not been yet explored in experimental behavioural finance. 
+Moreover, the introduction of a GPT interface would allow human participants to seek advice from different AI tools. This is quite important in practice, as would allow researchers to study the impact of AI-assisted decision-making on trading behaviour and performance, a treatment that has not been yet explored in experimental behavioural finance. 
 
 \subsection{Backend-End}
 [To be done...!]
