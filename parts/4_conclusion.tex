@@ -1,1 +1,13 @@
 \section{Concluding Remarks}
+This paper presents the Multi-participant Interactive Trading (MINT) platform, a new and versatile experimental environment designed to study trading behaviour in a realistic, continuous double-auction mechanism. The platform provides researchers in experimental economics and finance with a new tool for analysing how human and machine agents interact within electronic financial markets.
+
+MINT enables both human–human and human–machine trading interactions, allowing for treatments in which one or several participants compete with algorithmic traders. The architecture of the platform is fully modular and written in Python, ensuring transparency, flexibility, and ease of extension. Researchers can integrate their own machine traders, adjust experimental parameters, and design new behavioural or informational treatments.
+
+Following that, the platform includes an Administrative Interface Dashboard, where researchers can change their treatments directly, without the need of platform redeployment.
+
+For each trading market, the platform automatically generates and saves comprehensive log files, capturing all the different submitted orders. The files enable the reconstruction of Level 3 (L3) quote data, which consists of the Message and the Order Book. Such information not only allow the calculation of aggregate market metrics, such as total order volume, number of trades, and participant profits, but also support the analysis of the order book and market dynamics, as well as individual trading behaviour over time. 
+
+Last, the platform can be integrated to different participant recruiting services, such as Prolific, and is able to handle over 150 participants simultaneously. In addition, our Administrative Interface Dashboard allows the generation of credentials (username and passwords), thereby facilitating efficient experimental management.
+
+
+Looking forward, the integration of new front-end and back-end features will further expand the  potential of the platform. On the front end, the inclusion of real-time information panels would allow for   studding  how market participants react to new information and changing narratives. Moreover, the planned incorporation of GPT-based systems offers the opportunity for examining the behavioural and performance implications of AI-assisted decision-making. On the back end, the deployment of intelligent agents would enable the simulation of more realistic market conditions, where human traders would have to complete with machine intelligent agents. 
